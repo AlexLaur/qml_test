@@ -7,4 +7,5 @@ Start app using this command :
    ```
 
 Result should be:
+
 ![alt text](https://github.com/AlexLaur/qml_test/blob/master/_result/result.JPG?raw=true)
