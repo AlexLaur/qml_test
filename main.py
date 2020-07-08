@@ -14,10 +14,12 @@ class MainWindowEngine(QtQml.QQmlApplicationEngine):
 
         self.roots = self.rootObjects()
 
-        self.button = self.roots[0].findChild(QtCore.QObject, 'my_button')
+        self.button = self.roots[0].findChild(QtCore.QObject, 'menu_profile')
         self.button.clicked.connect(self.button_clicked)
 
     def button_clicked(self):
+        sender = self.sender()
+        # sender.setProperty('icon.source', 'icons/menu.png')
         print('Clicked')
 
 
